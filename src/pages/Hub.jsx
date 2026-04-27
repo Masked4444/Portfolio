@@ -46,7 +46,7 @@ const TiltCard = ({ nav }) => {
         <div className="absolute top-0 right-0 w-6 h-6 border-t border-r border-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <div className="absolute bottom-0 left-0 w-6 h-6 border-b border-l border-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         
-        <div style={{ transform: "translateZ(30px)" }} className="flex items-center gap-2 mb-2 border-b border-secondary-container/30 pb-2 relative z-10">
+        <div style={{ transform: "translateZ(1.875rem)" }} className="flex items-center gap-2 mb-2 border-b border-secondary-container/30 pb-2 relative z-10">
           <span className="material-symbols-outlined text-secondary text-xl group-hover:text-cyan-400 transition-colors">
             {nav.icon}
           </span>
@@ -59,7 +59,7 @@ const TiltCard = ({ nav }) => {
             </p>
           </div>
         </div>
-        <p style={{ transform: "translateZ(20px)" }} className="font-body-sm text-[11px] text-on-surface-variant group-hover:text-surface-bright leading-relaxed relative z-10">
+        <p style={{ transform: "translateZ(1.25rem)" }} className="font-body-sm text-[11px] text-on-surface-variant group-hover:text-surface-bright leading-relaxed relative z-10">
           {nav.description}
         </p>
 
@@ -102,7 +102,7 @@ const Hub = () => {
     <PageWrapper>
       <div 
         onMouseMove={handleMouseMove}
-        className="flex items-center justify-center relative w-full h-full min-h-[calc(100vh-160px)] px-lg overflow-hidden perspective-1000"
+        className="flex items-center justify-center relative w-full h-full min-h-[calc(100vh-10rem)] px-lg overflow-hidden perspective-1000"
       >
         {/* Background Atmosphere */}
         <div className="absolute inset-0 z-0 overflow-hidden opacity-20 pointer-events-none">
@@ -146,7 +146,7 @@ const Hub = () => {
           </motion.div>
 
           {/* RIGHT COLUMN: Interactive Orb & Cards */}
-          <div className="relative flex items-center justify-center aspect-square w-full max-w-[500px] mx-auto lg:mx-0">
+          <div className="relative flex items-center justify-center aspect-square w-full max-w-[31.25rem] mx-auto lg:mx-0">
             
             {/* The Chassis / Core Image with Z-Rotation */}
             <motion.div 
@@ -161,7 +161,7 @@ const Hub = () => {
                 initial={{ scale: 0.5, opacity: 0, filter: 'blur(30px)' }}
                 animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
                 transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-                className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] z-20"
+                className="relative w-[17.5rem] h-[17.5rem] md:w-[25rem] md:h-[25rem] z-20"
               >
                 <motion.img
                   alt="Arcane Circle"

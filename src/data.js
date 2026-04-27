@@ -4,7 +4,7 @@ export const portfolioData = {
         title: "Game Developer",
         brandName: "Moaz",
         copyrightYear: "2026",
-        copyrightText: "PILTOVER ARCHIVES // MANA_STABILIZED"
+        copyrightText: "MOAZ_PORTOFOLIO_SYSTEMS"
     },
     navLinks: [
         { id: "hub", label: "HOME", icon: "home" },
@@ -91,7 +91,7 @@ export const portfolioData = {
             title: "Origin & Directives",
             paragraphs: [
                 "Unity Game Developer focused on building responsive gameplay systems, multiplayer interactions, and scalable mechanics using <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">C#</span>. Experience includes Unity Netcode, event-driven architecture, and performance-oriented design.",
-                "Currently, I work as a PR at <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">FCAI GD CLUB</span>"
+                "Currently, I work as a PR at <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">FCAI GD CLUB</span>."
             ],
             logId: "CHR-0092",
             encryptionLevel: "LEVEL_IV"

@@ -70,8 +70,8 @@ const Valve = () => {
 
   return (
     <PageWrapper>
-    <div className="relative w-full h-full min-h-[calc(100vh-160px)] flex flex-col ley-lines glow-overlay">
-      <div className="flex-1 p-lg w-full max-w-[1200px] mx-auto flex flex-col justify-center items-center my-xl">
+    <div className="relative w-full h-full min-h-[calc(100vh-10rem)] flex flex-col ley-lines glow-overlay">
+      <div className="flex-1 p-lg w-full max-w-[75rem] mx-auto flex flex-col justify-center items-center my-xl">
         {/* Terminal Header */}
         <div className="w-full max-w-4xl mb-md flex justify-between items-end border-b border-secondary-container pb-sm relative z-10">
           <div>
@@ -107,7 +107,7 @@ const Valve = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                className="flex flex-col items-center justify-center h-[400px] text-center"
+                className="flex flex-col items-center justify-center h-[25rem] text-center"
               >
                 <div className="w-24 h-24 rounded-full border border-primary-container flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(0,229,255,0.4)]">
                   <span className="material-symbols-outlined text-5xl text-primary-container">
@@ -206,7 +206,7 @@ const Valve = () => {
                           type="checkbox"
                           value=""
                         />
-                        <div className="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-none peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-secondary after:border-secondary-container after:border after:h-5 after:w-5 after:transition-all peer-checked:bg-on-tertiary-container"></div>
+                        <div className="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-none peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-1 after:bg-secondary after:border-secondary-container after:border after:h-5 after:w-5 after:transition-all peer-checked:bg-on-tertiary-container"></div>
                       </label>
                     </div>
                     

@@ -3,15 +3,24 @@ import { portfolioData } from '../data.js';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Topbar = () => {
+const Topbar = ({ toggleMobileMenu, isMobileMenuOpen }) => {
   return (
-    <header className="fixed top-0 w-full border-b-2 border-yellow-700/30 bg-slate-950/40 backdrop-blur-xl flex justify-between items-center px-6 py-4 z-50 shadow-[0_4px_20px_rgba(0,229,255,0.15)] lg:pl-[280px]">
-      <div className="flex items-center gap-4 hidden lg:flex">
-        <span className="text-2xl font-black tracking-widest text-yellow-600 dark:text-yellow-500">
+    <header className="fixed top-0 w-full border-b-2 border-yellow-700/30 bg-slate-950/40 backdrop-blur-xl flex justify-between items-center px-6 py-4 z-50 shadow-[0_4px_20px_rgba(0,229,255,0.15)]">
+      <div className="flex items-center gap-4">
+        <button 
+          onClick={toggleMobileMenu}
+          className="lg:hidden text-cyan-400 hover:text-cyan-300 p-2 focus:outline-none flex items-center justify-center"
+          aria-label="Toggle Navigation Menu"
+        >
+          <span className="material-symbols-outlined text-[1.5rem]">
+            {isMobileMenuOpen ? 'close' : 'menu'}
+          </span>
+        </button>
+        <span className="text-[1.5rem] font-black tracking-widest text-yellow-600 dark:text-yellow-500 hidden sm:block">
           {portfolioData.global.operatorName}
         </span>
       </div>
-      <nav className="hidden md:flex gap-8 border-b border-cyan-500/20">
+      <nav className="hidden lg:flex gap-8 border-b border-cyan-500/20">
         {portfolioData.navLinks.map((link) => (
           <NavLink
             key={link.id}
@@ -40,17 +49,14 @@ const Topbar = () => {
         ))}
       </nav>
       <div className="flex items-center gap-4">
-        <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-cyan-400 font-bold hover:text-cyan-300 hover:shadow-[0_0_12px_#00E5FF] transition-all duration-300 active:scale-95 cursor-pointer">
-            settings
-          </span>
-          <span className="material-symbols-outlined text-yellow-700/60 hover:text-cyan-300 hover:shadow-[0_0_12px_#00E5FF] transition-all duration-300 active:scale-95 cursor-pointer">
-            notifications
-          </span>
-        </div>
-        <button className="bg-secondary-container text-on-secondary-container px-4 py-2 font-label-caps text-label-caps border border-secondary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[inset_0_0_10px_rgba(0,229,255,0)] hover:shadow-[inset_0_0_15px_rgba(0,229,255,0.8)]">
-          ARCHIVE
-        </button>
+        <a 
+          href={`${import.meta.env.BASE_URL}Moaz Nasser Resume.pdf`}
+          download="Moaz Nasser Resume.pdf"
+          className="bg-secondary-container text-on-secondary-container px-4 py-2 font-label-caps text-label-caps border border-secondary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[inset_0_0_10px_rgba(0,229,255,0)] hover:shadow-[inset_0_0_15px_rgba(0,229,255,0.8)] flex items-center gap-2"
+        >
+          <span className="hidden sm:inline">RESUME</span>
+          <span className="material-symbols-outlined text-[1.125rem]">download</span>
+        </a>
       </div>
     </header>
   );

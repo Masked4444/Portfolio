@@ -65,7 +65,7 @@
         background-image: 
             linear-gradient(to right, rgba(0, 229, 255, 0.03) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
-        background-size: 64px 64px;
+        background-size: 4rem 4rem;
     }
 
     .glow-overlay {
@@ -76,7 +76,7 @@
     .filigree-tr { clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0 100%); }
     
     .perspective-1000 {
-        perspective: 1000px;
+        perspective: 62.5rem;
     }
 }
 

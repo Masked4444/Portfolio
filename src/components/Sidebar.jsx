@@ -3,10 +3,18 @@ import { portfolioData } from '../data.js';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Sidebar = () => {
+const Sidebar = ({ isMobileMenuOpen, setIsMobileMenuOpen }) => {
   return (
-    <aside className="fixed left-0 top-0 h-full flex-col z-40 bg-slate-950/70 backdrop-blur-2xl w-64 border-r-2 border-yellow-800/40 shadow-2xl shadow-cyan-950/50 pt-24 hidden lg:flex">
-      <div className="p-6 border-b border-cyan-500/10 mb-4">
+    <>
+      {/* Mobile Overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-30 lg:hidden"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+      <aside className={`fixed left-0 top-0 h-full flex-col z-40 bg-slate-950/90 lg:bg-slate-950/70 backdrop-blur-2xl w-[16rem] border-r-2 border-yellow-800/40 shadow-2xl shadow-cyan-950/50 pt-[6rem] flex transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+        <div className="p-6 border-b border-cyan-500/10 mb-4 flex justify-between items-center">
         <div className="font-h2 text-h2 text-cyan-400">
           {portfolioData.global.operatorName}
         </div>
@@ -19,6 +27,7 @@ const Sidebar = () => {
           <NavLink
             key={link.id}
             to={`/${link.id === 'hub' ? '' : link.id}`}
+            onClick={() => setIsMobileMenuOpen(false)}
             className={({ isActive }) =>
               `relative flex items-center p-4 gap-3 transition-colors duration-200 group transition-all duration-300 ease-in-out ${
                 isActive
@@ -44,6 +53,7 @@ const Sidebar = () => {
         ))}
       </nav>
     </aside>
+    </>
   );
 };
 

@@ -8,7 +8,7 @@ const Alchemy = () => {
 
   return (
     <PageWrapper>
-    <div className="p-lg relative min-h-[calc(100vh-160px)] flex flex-col gap-xl max-w-7xl mx-auto w-full">
+    <div className="p-lg relative min-h-[calc(100vh-10rem)] flex flex-col gap-xl max-w-7xl mx-auto w-full">
       {/* Decorative Background Frame (Chassis) */}
       <div className="absolute inset-beveled-margin border-frame-weight border-secondary/30 pointer-events-none z-0 hidden lg:block">
         <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-secondary"></div>
@@ -37,7 +37,7 @@ const Alchemy = () => {
         </div>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-md flex-1 min-h-[600px] relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-md flex-1 min-h-[37.5rem] relative z-10">
         {/* Central Power Terminal */}
         <motion.div 
           initial={{ scale: 0.8, opacity: 0 }}
@@ -211,7 +211,7 @@ const Alchemy = () => {
       {/* Detail Panel (Bottom spanning) */}
       <div className="etched-glass p-lg flex flex-col md:flex-row gap-lg items-center relative overflow-hidden z-10">
         <div className="absolute right-0 top-0 w-32 h-32 opacity-10 pointer-events-none">
-          <span className="material-symbols-outlined text-[120px]">
+          <span className="material-symbols-outlined text-[7.5rem]">
             settings
           </span>
         </div>
@@ -223,7 +223,7 @@ const Alchemy = () => {
             {data.nodes[0].description}
           </p>
         </div>
-        <div className="flex flex-col gap-sm min-w-[200px]">
+        <div className="flex flex-col gap-sm min-w-[12.5rem]">
           <div className="glass-terminal px-4 py-2 flex justify-between items-center">
             <span className="font-label-caps text-label-caps text-on-surface-variant">
               COST:

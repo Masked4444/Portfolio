@@ -46,7 +46,7 @@ const Archive = () => {
             variants={itemVariants}
             key={p.id}
             whileHover={{ scale: 1.02 }}
-            className="snap-center shrink-0 w-[600px] h-[400px] etched-glass relative group cursor-pointer transition-all duration-500 hover:w-[800px] hover:hextech-glow rounded-lg overflow-hidden flex flex-col"
+            className="snap-center shrink-0 w-[85vw] md:w-[37.5rem] h-[25rem] etched-glass relative group cursor-pointer transition-all duration-500 hover:w-[90vw] md:hover:w-[50rem] hover:hextech-glow rounded-lg overflow-hidden flex flex-col"
           >
             <div className="absolute top-0 right-0 w-16 h-16 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik00MCAwTDAgNDBoMTBMMDAgMTB6IiBmaWxsPSIjNWY0MDFhIiBvcGFjaXR5PSIuNSIvPjwvc3ZnPg==')] bg-no-repeat bg-top-right pointer-events-none z-20"></div>
             <div className="h-2 w-full bg-surface-container flex">
@@ -108,7 +108,7 @@ const Archive = () => {
         ))}
 
         {/* Spacer for smooth scroll end */}
-        <div className="snap-center shrink-0 w-[100px] h-full"></div>
+        <div className="snap-center shrink-0 w-[6.25rem] h-full"></div>
       </motion.div>
 
       {/* Ambient Background Filigree */}

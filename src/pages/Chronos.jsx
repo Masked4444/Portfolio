@@ -8,10 +8,10 @@ const Chronos = () => {
 
   return (
     <PageWrapper>
-    <div className="p-lg md:p-xl relative w-full h-full min-h-[calc(100vh-160px)]">
+    <div className="p-lg md:p-xl relative w-full h-full min-h-[calc(100vh-10rem)]">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-10">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[url('https://images.unsplash.com/photo-1634838080334-28befa9eff80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')] bg-cover opacity-20 mix-blend-screen"></div>
+        <div className="absolute top-0 right-0 w-[50rem] h-[50rem] bg-[url('https://images.unsplash.com/photo-1634838080334-28befa9eff80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80')] bg-cover opacity-20 mix-blend-screen"></div>
       </div>
 
       {/* The Chassis Container */}
@@ -82,7 +82,7 @@ const Chronos = () => {
         {/* Biography & Schematics (Right Column) */}
         <div className="md:col-span-8 flex flex-col gap-md">
           {/* Glass Panel Bio */}
-          <div className="bg-surface-container-high/40 backdrop-blur-[20px] border border-secondary-container/30 p-lg relative min-h-[400px] overflow-hidden group">
+          <div className="bg-surface-container-high/40 backdrop-blur-[20px] border border-secondary-container/30 p-lg relative min-h-[25rem] overflow-hidden group">
             {/* Schematic Background */}
             <div className="absolute inset-0 opacity-[0.05] pointer-events-none mix-blend-screen bg-[url('https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80')] bg-cover"></div>
             {/* Filigree / Frame Corners */}
