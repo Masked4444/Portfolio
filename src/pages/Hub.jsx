@@ -109,7 +109,7 @@ const Hub = () => {
           <div className="absolute w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-surface-container-high via-background to-background"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl z-10 gap-12 lg:gap-24 items-center">
+        <div className="flex flex-wrap lg:flex-nowrap justify-between w-full max-w-7xl z-10 gap-12 lg:gap-24 items-center">
           
           {/* LEFT COLUMN: Text Content */}
           <motion.div 
@@ -146,7 +146,7 @@ const Hub = () => {
           </motion.div>
 
           {/* RIGHT COLUMN: Interactive Orb & Cards */}
-          <div className="relative flex items-center justify-center aspect-square w-full max-w-[31.25rem] mx-auto lg:mx-0">
+          <div className="relative flex items-center justify-center aspect-square w-full max-w-[31.25rem] lg:w-1/2 mx-auto lg:mx-0 shrink-0">
             
             {/* The Chassis / Core Image with Z-Rotation */}
             <motion.div 

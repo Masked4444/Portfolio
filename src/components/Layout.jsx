@@ -16,7 +16,7 @@ const Layout = () => {
       <Topbar toggleMobileMenu={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
       <div className="flex-1 flex pt-[4.75rem] w-full">
         <Sidebar isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-        <main className="flex-1 lg:ml-[16rem] w-full flex flex-col" id="app-content">
+        <main className="flex-1 lg:ml-[16rem] w-full lg:max-w-[calc(100vw-16rem)] flex flex-col main-content" id="app-content">
           <AnimatePresence mode="wait">
             <div key={location.pathname} className="flex-1 w-full flex flex-col">
               <Outlet />
