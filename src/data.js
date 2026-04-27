@@ -81,7 +81,7 @@ export const portfolioData = {
     chronos: {
         headerTitle: "CHRONOS_ARCHIVE",
         headerSubtitle: "BIOGRAPHICAL_DATA_STREAM :: ACTIVE",
-        portraitImage: "https://media.licdn.com/dms/image/v2/D5603AQG95Kt8vkDESg/profile-displayphoto-scale_400_400/B56Zn90dsAKEAo-/0/1760900015545?e=1778716800&v=beta&t=lKhivXM4124RekGzfbrS8yBa9YE-pmmUExn5_SCizhw",
+        portraitImage: "https://www.linkedin.com/in/moaz-nasser-a81a24388/",
         portraitLensImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuAHPHHCTkRgAj8NiiZKc2FYXYwx32pCFZfIwiTflPav7A1akwPIho-GOlzHEsEeXuyOLCZNqSvgRb55cp_aJjAfEGDQU68A78f0Kiv0mvHJeyzy29duCUHlx0zpxxAJDVTecpkNso3TlcZZaolJ26IGu6zz97zPWHizqJwaJVh7F8FdNsNVft5naBU2-uDQWW2YBm3MhgNGDM5BViu7tI3WbBL03dy6yqthRdIlralDk4qrVANGtmfJ17nz8LYtoJnW6d3sA3c61KxZ",
         metrics: [
             { label: "Unity", value: 70, colorClass: "bg-gradient-to-r from-on-tertiary-container to-primary-container", shadowClass: "shadow-[0_0_10px_rgba(0,229,255,0.8)]" },
@@ -145,7 +145,8 @@ export const portfolioData = {
         form: {
             idPlaceholder: "ENTER ALIAS",
             emailPlaceholder: "COMMS@NODE.NET",
-            messagePlaceholder: "AWAITING INPUT SEQUENCE..."
+            messagePlaceholder: "AWAITING INPUT SEQUENCE...",
+            formEndpoint: "https://formspree.io/f/xeevwvkb"
         }
     }
 };
