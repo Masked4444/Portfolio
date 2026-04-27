@@ -12,20 +12,20 @@ const Layout = () => {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Topbar toggleMobileMenu={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
-      <div className="flex-1 flex pt-[4.75rem] relative w-full overflow-hidden">
+      <div className="flex-1 flex pt-[4.75rem] w-full">
         <Sidebar isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
-        <main className="flex-1 lg:ml-64 relative min-h-[calc(100vh-10rem)]" id="app-content">
+        <main className="flex-1 lg:ml-[16rem] w-full flex flex-col" id="app-content">
           <AnimatePresence mode="wait">
-            <div key={location.pathname} className="w-full h-full absolute inset-0">
+            <div key={location.pathname} className="flex-1 w-full flex flex-col">
               <Outlet />
             </div>
           </AnimatePresence>
         </main>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
