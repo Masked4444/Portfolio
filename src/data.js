@@ -8,10 +8,10 @@ export const portfolioData = {
     },
     navLinks: [
         { id: "hub", label: "HOME", icon: "home" },
-        { id: "arsenal", label: "ARSENAL", icon: "precision_manufacturing" },
-        { id: "alchemy", label: "ALCHEMY", icon: "science" },
-        { id: "chronicles", label: "CHRONICLES", icon: "menu_book" },
-        { id: "valve", label: "VALVE", icon: "settings_input_component" }
+        { id: "arsenal", label: "PROJECTS", icon: "precision_manufacturing" },
+        { id: "alchemy", label: "SKILLS", icon: "science" },
+        { id: "chronicles", label: "ABOUT", icon: "menu_book" },
+        { id: "valve", label: "CONTACT", icon: "settings_input_component" }
     ],
     hub: {
         operatorId: "OPERATOR_01",
@@ -20,15 +20,15 @@ export const portfolioData = {
         navigation: [
             {
                 id: "arsenal",
-                title: "ARSENAL",
-                subtitle: "WEAPONS_&_TECH_VAULT",
+                title: "PROJECTS",
+                subtitle: "GAMES_I_MADE",
                 icon: "precision_manufacturing",
                 description: "Access stabilized project records and schematics.",
                 route: "/arsenal"
             },
             {
                 id: "chronicles",
-                title: "CHRONICLES",
+                title: "ABOUT",
                 subtitle: "BIOGRAPHICAL_DATA_STREAM",
                 icon: "menu_book",
                 description: "Review operator origins and directive parameters.",
@@ -36,7 +36,7 @@ export const portfolioData = {
             },
             {
                 id: "valve",
-                title: "VALVE",
+                title: "CONTACT",
                 subtitle: "COMMUNICATION_LINK",
                 icon: "settings_input_component",
                 description: "Establish terminal link for encrypted transmission.",
