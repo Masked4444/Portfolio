@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Topbar from './Topbar';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
+import CustomCursor from './CustomCursor';
 
 const Layout = () => {
   const location = useLocation();
@@ -13,6 +14,7 @@ const Layout = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <CustomCursor />
       <Topbar toggleMobileMenu={toggleMobileMenu} isMobileMenuOpen={isMobileMenuOpen} />
       <div className="flex-1 flex pt-[4.75rem] w-full">
         <Sidebar isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
