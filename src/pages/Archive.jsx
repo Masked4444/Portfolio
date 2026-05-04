@@ -92,7 +92,7 @@ const Archive = () => {
               </div>
               <div className="flex items-center gap-4">
                 <a 
-                  href="https://moaz-nasser.itch.io/war" 
+                  href={p.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-label-caps text-[10px] tracking-widest text-primary-container border border-primary-container/30 px-3 py-1 hover:bg-primary-container/10 transition-colors"

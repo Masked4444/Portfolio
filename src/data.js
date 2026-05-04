@@ -1,8 +1,8 @@
 export const portfolioData = {
     global: {
-        operatorName: "Moaz",
+        operatorName: "Moaz Nasser",
         title: "Game Developer",
-        brandName: "Moaz",
+        brandName: "Moaz Nasser",
         copyrightYear: "2026",
         copyrightText: "MOAZ_PORTOFOLIO_SYSTEMS"
     },
@@ -45,8 +45,8 @@ export const portfolioData = {
         ]
     },
     archive: {
-        headerTitle: "THE ARCHIVE VAULT",
-        headerSubtitle: "STABILIZED_PROJECT_RECORDS // ACCESS_GRANTED",
+        headerTitle: "PROJECTS",
+        headerSubtitle: "CAREER_HISTORY",
         projects: [
             {
                 id: 1,
@@ -56,31 +56,34 @@ export const portfolioData = {
                 date: "2025",
                 stack: "Unity // C#",
                 icon: "skull",
-                widthClass: "w-[30%]"
+                widthClass: "w-[30%]",
+                link: "https://moaz-nasser.itch.io/war"
             },
             {
                 id: 2,
                 title: "Kitchen Chaos",
                 description: "Cooking Game",
-                image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC2W5GmoNlfzHHZ-cUYQdN6XvZiG-zQ_REYDcQL_5Ooo7yPjRj9_75WseyM_74MY1TKk7mw-IPLXPj0cBPIIqycOV6LlePcCY5qzblfxy-oKEx_Mfff074k7X_Llw7EQ1xqHnreuZJMbCmc3qP-d28C_Ekos21LOIMJxgalvECxJ4H_-CloSxSFGKCD1I5_fddPT9QIwZm0QgjuTg4FK2-LrERZIA0N98pbuq82w0DRPEXZ8VeLzLAZv-OAzWzB1aG5a1KR-sL1xZXA",
+                image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2275820/capsule_616x353.jpg?t=1725190944",
                 status: "DEPLOYED",
                 stack: "Unity // C#",
                 icon: "lock_open",
-                widthClass: "w-[100%]"
+                widthClass: "w-[100%]",
+                link: "https://moaz-nasser.itch.io/kitchen-chaos"
             },
             {
                 id: 3,
                 title: "Upcoming...",
-                description: "",
+                description: "New project in development.",
                 image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBzu8a_eO0C8CEQVE4V3cxuNyAV2IUtNEJhlVpH5wmgWaWCFucyzIA2bLSAg-1BiQN7wNn6dAdzdg4iMtSdVjmrwNGfdbUFUFhtvuK_tbXi0Fij6KKqz9RLKeqaOwbDoafzHc011R92NjkyAF7zvC5cq4C5aIaUhkS9C8sgkPYzQqC8PxEAZRQ-ZOL2eFWpJoazgVzow6_sqqWr2OikVvUC_JC2t8LWHQBkjddsMp_B6Wm1D-FYSLx6rzmK3HFxhNlT08JWezMUbh91",
                 icon: "lock",
-                widthClass: "w-[0%]"
+                widthClass: "w-[0%]",
+                link: "#"
             }
         ]
     },
     chronos: {
-        headerTitle: "CHRONOS_ARCHIVE",
-        headerSubtitle: "BIOGRAPHICAL_DATA_STREAM :: ACTIVE",
+        headerTitle: "ABOUT ME",
+        headerSubtitle: "MY_STORY",
         portraitImage: "https://media.licdn.com/dms/image/v2/D4D03AQEi3KiflWXt_A/profile-displayphoto-scale_200_200/B4DZ3OUT62JsAY-/0/1777283024528?e=1778716800&v=beta&t=Qor6HqGcL7WSaekiRy0Lz0-TjUCBrOyuYnuVb2KOR9k",
         portraitLensImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuAHPHHCTkRgAj8NiiZKc2FYXYwx32pCFZfIwiTflPav7A1akwPIho-GOlzHEsEeXuyOLCZNqSvgRb55cp_aJjAfEGDQU68A78f0Kiv0mvHJeyzy29duCUHlx0zpxxAJDVTecpkNso3TlcZZaolJ26IGu6zz97zPWHizqJwaJVh7F8FdNsNVft5naBU2-uDQWW2YBm3MhgNGDM5BViu7tI3WbBL03dy6yqthRdIlralDk4qrVANGtmfJ17nz8LYtoJnW6d3sA3c61KxZ",
         metrics: [
@@ -90,10 +93,12 @@ export const portfolioData = {
         biography: {
             title: "Origin & Directives",
             paragraphs: [
-                "Unity Game Developer focused on building responsive gameplay systems, multiplayer interactions, and scalable mechanics using <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">C#</span>. Experience includes Unity Netcode, event-driven architecture, and performance-oriented design.",
-                "Currently, I work as a PR at <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">FCAI GD CLUB</span>."
+                "I am a Game Developer focused on building interactive games using <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">Unity</span> & <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">C#</span>. I enjoy working on game mechanics and turning simple ideas into playable experiences.",
+                "I'm also a PR member at <span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">FCAI-CU Game Development Club</span>. I try to be active and help my colleagues with any help they need.",
+                "Right now, I'm focusing on leveling up my Unity skills, building more complete projects, and getting deeper into game development.",
+                "<span class=\"text-primary-container font-code-data px-1 border border-primary-container/30 bg-primary-container/10\">MY GOAL</span> is to keep improving & building games that people enjoy playing."
             ],
-            logId: "CHR-0092",
+            logId: "MOAZ_NASSER",
             encryptionLevel: "LEVEL_IV"
         },
         skills: [
@@ -140,12 +145,12 @@ export const portfolioData = {
         ]
     },
     signal: {
-        headerTitle: "Signal Array",
-        headerSubtitle: "TERMINAL_LINK // ESTABLISHED",
+        headerTitle: "CONTACT ME",
+        headerSubtitle: "LEAVE_A_MESSAGE",
         form: {
-            idPlaceholder: "ENTER ALIAS",
-            emailPlaceholder: "COMMS@NODE.NET",
-            messagePlaceholder: "AWAITING INPUT SEQUENCE...",
+            idPlaceholder: "ENTER YOUR NAME",
+            emailPlaceholder: "[EMAIL_ADDRESS]",
+            messagePlaceholder: "AWAITING INPUT...",
             formEndpoint: "https://formspree.io/f/xeevwvkb"
         }
     }

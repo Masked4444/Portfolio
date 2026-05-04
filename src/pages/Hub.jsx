@@ -207,6 +207,31 @@ const Hub = () => {
             </motion.div>
           </div>
         </div>
+
+        {/* Bottom Status Ticker */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-primary-container/5 border-t border-primary-container/10 py-1 z-20">
+          <div className="flex whitespace-nowrap animate-marquee">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="flex gap-12 px-6 items-center">
+                <span className="font-code-data text-[10px] text-primary-container/60 uppercase">
+                  System_Status: <span className="text-primary-container">Optimal</span>
+                </span>
+                <span className="font-code-data text-[10px] text-primary-container/60 uppercase">
+                  Aether_Level: <span className="text-primary-container">Stable</span>
+                </span>
+                <span className="font-code-data text-[10px] text-primary-container/60 uppercase">
+                  Connection: <span className="text-primary-container">Secure</span>
+                </span>
+                <span className="font-code-data text-[10px] text-primary-container/60 uppercase">
+                  Operator: <span className="text-primary-container">{global.operatorName}</span>
+                </span>
+                <span className="font-code-data text-[10px] text-primary-container/60 uppercase">
+                  Project_v2.0.4_Build_Stabilized
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </PageWrapper>
   );
